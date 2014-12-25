@@ -1,0 +1,7 @@
+(require 'fq_fonts)
+(require 'fq_transparent)
+(require 'linum)
+(global-linum-mode t)
+(require 'fq_keybinding)
+(require 'color-theme-solarized)
+(provide 'fq_init)
