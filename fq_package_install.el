@@ -5,5 +5,11 @@
 (package-install 'auto-complete)
 (package-install 'auto-complete-clang)
 (package-install 'yasnippet)
+(package-install 'ecb)
+(package-install 'mew)
+(package-install 'w3m)
+(package-install 'smex)
+(package-install 'evil)
+(package-install 'pcomplete-extension)
 (provide 'fq_package_install)
 

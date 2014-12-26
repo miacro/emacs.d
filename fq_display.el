@@ -1,0 +1,7 @@
+(global-linum-mode t)
+(setq inhibit-startup-buffer-menu t)
+(setq inhibit-startup-screen nil)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
+(provide 'fq_display)
