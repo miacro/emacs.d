@@ -11,4 +11,5 @@
 (require 'fq_w3m)
 (require 'fq_smex)
 (require 'fq_pcomplete)
+(require 'fq_evil)
 (provide 'fq_init)
