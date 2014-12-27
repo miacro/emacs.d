@@ -11,5 +11,6 @@
 (package-install 'smex)
 (package-install 'evil)
 (package-install 'pcomplete-extension)
+(package-install 'emms)
 (provide 'fq_package_install)
 
