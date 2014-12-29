@@ -12,5 +12,6 @@
 (package-install 'evil)
 (package-install 'pcomplete-extension)
 (package-install 'magit)
+(package-install 'git)
 (provide 'fq_package_install)
 

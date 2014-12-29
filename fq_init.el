@@ -13,4 +13,5 @@
 (require 'fq_pcomplete)
 (require 'fq_evil)
 (require 'fq_magit)
+(require 'fq_git)
 (provide 'fq_init)
