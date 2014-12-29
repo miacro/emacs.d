@@ -12,4 +12,5 @@
 (require 'fq_smex)
 (require 'fq_pcomplete)
 (require 'fq_evil)
+(require 'fq_magit)
 (provide 'fq_init)
