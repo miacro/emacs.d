@@ -1,6 +1,5 @@
 (require 'fq_elpa)
 (require 'fq_package_install)
-(require 'fq_transparent)
 (require 'fq_slime)
 (require 'fq_yasnippet)
 (require 'fq_auto-complete)
@@ -14,6 +13,7 @@
 
 (require 'fq_fonts)
 (require 'fq_theme)
+(require 'fq_transparent)
 (require 'fq_keybinding)
 (require 'fq_config)
 (provide 'fq_init)
