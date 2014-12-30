@@ -27,13 +27,13 @@
       (mapcar (lambda (item)(concat "-I" item))
               (split-string
                 "
-                /home/aq/ace/ACE_wrappers
-                /home/aq/cqthink/ehr_svc_v3/src
-                /usr/lib/gcc/i686-pc-linux-gnu/4.8.3/include/g++-v4
-                /usr/lib/gcc/i686-pc-linux-gnu/4.8.3/include/g++-v4/i686-pc-linux-gnu
-                /usr/lib/gcc/i686-pc-linux-gnu/4.8.3/include/g++-v4/backward
-                /usr/lib/gcc/i686-pc-linux-gnu/4.8.3/include
-                /usr/lib/gcc/i686-pc-linux-gnu/4.8.3/include-fixed
+                /home/think/ace/ACE_wrappers
+                /home/think/cqthink/ehr_svc_v3/src
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include/g++-v4
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include/g++-v4/x86_64-pc-linux-gnu
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include/g++-v4/backward
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include-fixed
                 /usr/include
                 "
                 )))
