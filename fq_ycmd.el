@@ -1,0 +1,12 @@
+(require 'ycmd)
+(ycmd-setup)
+(set-variable 'ycmd-server-command '("python2" "/home/think/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd"))
+;;(set-variable 'ycmd-server-command '("python2" "/home/think/github/emacs/ycmd/ycmd"))
+(set-variable 'ycmd-global-config "/home/think/.ycm_extra_conf.py")
+(set-variable 'ycmd-extra-conf-whitelist '("/home/think/cqthink/ehr_svc_v3/*"))
+
+(require 'company-ycmd)
+(company-ycmd-setup)
+(require 'flycheck-ycmd)
+(flycheck-ycmd-setup)
+(provide 'fq_ycmd)

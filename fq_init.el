@@ -13,6 +13,8 @@
 (require 'fq_magit)
 (require 'fq_git)
 (require 'fq_doxymacs)
+(require 'fq_company)
+(require 'fq_ycmd)
 
 (require 'fq_fonts)
 (require 'fq_theme)
