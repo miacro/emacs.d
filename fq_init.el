@@ -3,6 +3,8 @@
 (require 'fq_slime)
 (require 'fq_yasnippet)
 (require 'fq_auto-complete)
+;;(require 'fq_auto-complete-clang)
+(require 'fq_auto-complete-clang-async)
 (require 'fq_w3m)
 (require 'fq_smex)
 (require 'fq_pcomplete)
