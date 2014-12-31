@@ -1,2 +1,2 @@
 (require 'pcomplete-extension)
-(provide 'fq_pcomplete)
+(provide 'fq-pcomplete)

@@ -1,3 +1,3 @@
 ;;(require 'ecb-autoloads)
 (require 'ecb)
-(provide 'fq_ecb)
+(provide 'fq-ecb)

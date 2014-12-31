@@ -10,4 +10,4 @@
      (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
-(provide 'fq_elpa)
+(provide 'fq-elpa)

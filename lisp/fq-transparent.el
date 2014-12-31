@@ -11,4 +11,4 @@
     (setq alpha-list (cdr (append alpha-list (list h))))
     )
   )
-(provide 'fq_transparent)
+(provide 'fq-transparent)

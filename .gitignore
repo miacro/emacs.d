@@ -1,5 +1,5 @@
-/fq_installed/**
-!/fq_installed/*.el
+/fq-installed/**
+!/fq-installed/*.el
 
 *.swp
 *\~

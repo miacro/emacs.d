@@ -3,4 +3,4 @@
 ;;(add-to-list 'load-path "~/github/slime")
 (require 'slime-autoloads)
 (setq inferior-lisp-program "/usr/bin/sbcl")
-(provide 'fq_slime)
+(provide 'fq-slime)

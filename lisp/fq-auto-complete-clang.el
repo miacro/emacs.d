@@ -18,6 +18,7 @@
 (add-hook 'c-mode-common-hook 'my-ac-cc-mode-setup)
 ;; ac-source-gtags
 
+;; run " echo "" | g++ -v -x c++ -E - " to get include path
 
 (setq ac-clang-flags
       (mapcar (lambda (item)(concat "-I" item))
@@ -31,8 +32,16 @@
                 /usr/lib/gcc/i686-pc-linux-gnu/4.8.3/include
                 /usr/lib/gcc/i686-pc-linux-gnu/4.8.3/include-fixed
                 /usr/include
+
+                /home/think/ace/ACE_wrappers
+                /home/think/cqthink/ehr_svc_v3/src
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include/g++-v4
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include/g++-v4/x86_64-pc-linux-gnu
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include/g++-v4/backward
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include
+                /usr/lib/gcc/x86_64-pc-linux-gnu/4.8.4/include-fixed
                 "
                 )))
 
 (my-ac-config)
-(provide 'fq_auto-complete-clang)
+(provide 'fq-auto-complete-clang)
