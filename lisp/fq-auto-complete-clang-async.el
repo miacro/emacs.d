@@ -1,3 +1,6 @@
+;;; fq-auto-complete-clang-async --- Summary
+;;; Commentary:
+;;; Code:
 (require 'auto-complete-clang-async)
 
 (defun ac-cc-mode-setup ()
@@ -12,4 +15,4 @@
   (global-auto-complete-mode t))
 (my-ac-config)
 (provide 'fq-auto-complete-clang-async)
-
+;;; fq-auto-complete-clang-async ends here

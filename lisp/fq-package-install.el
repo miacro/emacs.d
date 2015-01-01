@@ -1,3 +1,6 @@
+;;; fq-package-install --- Summary
+;;; Commentary:
+;;; Code:
 (package-install '2048-game)
 (package-install 'ac-math)
 (package-install 'auto-complete)
@@ -36,3 +39,4 @@
 (package-install 'yasnippet)
 (package-install 'ycmd)
 (provide 'fq-package-install)
+;;; fq-package-install ends here

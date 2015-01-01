@@ -1,4 +1,6 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;透明度
+;;; fq-transparent --- Summary
+;;; Commentary:
+;;; Code:
 (global-set-key [(f8)] 'loop-alpha)
 (setq alpha-list '((55 55) (100 100)))
 (defun loop-alpha ()
@@ -12,3 +14,4 @@
     )
   )
 (provide 'fq-transparent)
+;;; fq-transparent ends here

@@ -1,3 +1,6 @@
+;;; fq-init --- Summary
+;;; Commentary:
+;;; Code:
 (add-to-list 'load-path "~/fq-emacs.d/lisp")
 
 (require 'fq-elpa)
@@ -26,3 +29,4 @@
 (require 'fq-keybinding)
 (require 'fq-config)
 (provide 'fq-init)
+;;; fq-init ends here

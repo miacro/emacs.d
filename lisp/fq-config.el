@@ -1,3 +1,6 @@
+;;; fq-config --- Summary
+;;; Commentary:
+;;; Code:
 (global-linum-mode t)
 (setq inhibit-startup-buffer-menu t)
 ;;(setq inhibit-startup-screen nil)
@@ -30,9 +33,10 @@
 
 (setq x-select-enable-clipboard t)
 (setq frame-title-format '("" buffer-file-name "@emacs" ))
-;;(setq default-fill-column 80) 
+;;(setq default-fill-column 80)
 
 (setq default-tab-width 4)
 (setq-default indent-tabs-mode nil)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (provide 'fq-config)
+;;; fq-config ends here

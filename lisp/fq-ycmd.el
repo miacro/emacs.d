@@ -1,3 +1,6 @@
+;;; fq-ycmd --- Summary
+;;; Commentary:
+;;; Code:
 (require 'ycmd)
 (ycmd-setup)
 (set-variable 'ycmd-server-command '("python2" "/home/aq/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd"))
@@ -10,3 +13,4 @@
 (require 'flycheck-ycmd)
 (flycheck-ycmd-setup)
 (provide 'fq-ycmd)
+;;; fq-ycmd ends here
