@@ -20,6 +20,7 @@
 (require 'fq-doxymacs)
 (require 'fq-company)
 (require 'fq-slime-company)
+(require 'fq-company-cmake)
 (require 'fq-ycmd)
 (require 'fq-flycheck)
 
