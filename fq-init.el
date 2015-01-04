@@ -24,6 +24,7 @@
 (require 'fq-ycmd)
 (require 'fq-flycheck)
 (require 'fq-highlight-defined)
+(require 'fq-google-c-style)
 
 (require 'fq-fonts)
 (require 'fq-theme)
