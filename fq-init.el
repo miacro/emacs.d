@@ -1,7 +1,7 @@
 ;;; fq-init --- Summary
 ;;; Commentary:
 ;;; Code:
-(add-to-list 'load-path "./lisp")
+(add-to-list 'load-path "~/fq-emacs.d/lisp")
 
 (require 'fq-elpa)
 (require 'fq-package-install)
