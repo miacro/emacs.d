@@ -1,3 +1,6 @@
+;;; package -- Summary
+;;; Commentary:
+;;; Code:
 (add-to-list 'load-path "~/fq-emacs.d/lisp")
 
 (require 'fq-elpa)
@@ -19,6 +22,7 @@
 (require 'fq-slime-company)
 (require 'fq-ycmd)
 (require 'fq-flycheck)
+(require 'fq-highlight-defined)
 
 (require 'fq-fonts)
 (require 'fq-theme)
@@ -26,3 +30,4 @@
 (require 'fq-keybinding)
 (require 'fq-config)
 (provide 'fq-init)
+;;; fq-init.el ends here

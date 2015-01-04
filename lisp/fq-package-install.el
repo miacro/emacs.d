@@ -1,3 +1,6 @@
+;;; package --- Summary
+;;; Commentary:
+;;; code:
 (package-install '2048-game)
 (package-install 'ac-math)
 (package-install 'auto-complete)
@@ -20,6 +23,7 @@
 (package-install 'git-commit-mode)
 (package-install 'git-rebase-mode)
 (package-install 'goto-chg)
+(package-install 'highlight-defined)
 (package-install 'let-alist)
 (package-install 'magit)
 (package-install 'math-symbol-lists)
@@ -36,3 +40,4 @@
 (package-install 'yasnippet)
 (package-install 'ycmd)
 (provide 'fq-package-install)
+;;; fq-package-install.el ends here
