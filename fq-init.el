@@ -1,4 +1,4 @@
-;;; package -- Summary
+;;; fq-init --- Summary
 ;;; Commentary:
 ;;; Code:
 (add-to-list 'load-path "~/fq-emacs.d/lisp")
@@ -20,6 +20,7 @@
 (require 'fq-doxymacs)
 (require 'fq-company)
 (require 'fq-slime-company)
+(require 'fq-company-cmake)
 (require 'fq-ycmd)
 (require 'fq-flycheck)
 (require 'fq-highlight-defined)
@@ -30,4 +31,4 @@
 (require 'fq-keybinding)
 (require 'fq-config)
 (provide 'fq-init)
-;;; fq-init.el ends here
+;;; fq-init ends here

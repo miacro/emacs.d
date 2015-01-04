@@ -1,3 +1,6 @@
+;;; fq-auto-complete-clang --- Summary
+;;; Commentary:
+;;; Code:
 (require 'auto-complete-clang)
 
 ;;(setq ac-auto-start nil)
@@ -45,3 +48,4 @@
 
 (my-ac-config)
 (provide 'fq-auto-complete-clang)
+;;; fq-auto-complete-clang ends here
