@@ -3,8 +3,8 @@
 ;;; Code:
 (require 'ycmd)
 (ycmd-setup)
-(set-variable 'ycmd-server-command '("python2" "/home/aq/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd"))
-;;(set-variable 'ycmd-server-command '("python2" "/home/think/github/emacs/ycmd/ycmd"))
+;;(set-variable 'ycmd-server-command '("python2" "/home/aq/.vim/bundle/YouCompleteMe/third_party/ycmd/ycmd"))
+(set-variable 'ycmd-server-command '("python2" "/home/aq/github/emacs/ycmd/ycmd"))
 (set-variable 'ycmd-global-config "/home/aq/.ycm_extra_conf.py")
 (set-variable 'ycmd-extra-conf-whitelist '("/home/aq/cqthink/ehr_svc_v3/*"))
 
