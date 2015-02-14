@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (add-to-list 'load-path "~/github/emacs/org-mode" t)
+(add-to-list 'load-path "~/github/emacs/org-mode/contrib/lisp" t)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-cc" 'org-capture)
