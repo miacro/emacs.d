@@ -39,5 +39,6 @@
 (package-install 'w3m)
 (package-install 'yasnippet)
 (package-install 'ycmd)
+(package-install 'google-c-style)
 (provide 'fq-package-install)
 ;;; fq-package-install ends here
