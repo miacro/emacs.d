@@ -2,7 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-(add-to-list 'el-get-user-package-directory "~/fq-emacs.d/init-lisp")
 
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer

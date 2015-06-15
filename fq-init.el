@@ -3,7 +3,7 @@
 ;;; Code:
 (require 'fq-load-path)
 (require 'fq-el-get)
-;;(require 'fq-melpa)
+(require 'fq-melpa)
 
 (require 'fq-slime)
 (require 'fq-yasnippet)
@@ -14,7 +14,7 @@
 (require 'fq-w3m)
 (require 'fq-ecb)
 (require 'fq-smex)
-;;(require 'fq-pcomplete)
+(require 'fq-pcomplete)
 (require 'fq-evil)
 (require 'fq-magit)
 (require 'fq-git)
@@ -24,6 +24,10 @@
 (require 'fq-company-cmake)
 ;; ycmd completion
 ;;(require 'fq-ycmd)
+(require 'fq-irony-mode)
+(require 'fq-company-irony)
+(require 'fq-flycheck-irony)
+(require 'fq-irony-eldoc)
 (require 'fq-flycheck)
 (require 'fq-highlight-defined)
 (require 'fq-google-c-style)
