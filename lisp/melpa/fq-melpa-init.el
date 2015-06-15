@@ -1,4 +1,4 @@
-;;; fq-elpa --- Summary
+;;; fq-melpa-init --- Summary
 ;;; Commentary:
 ;;; Code:
 (require 'package) ;; You might already have this line
@@ -19,5 +19,5 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
-(provide 'fq-elpa)
-;;; fq-elpa ends here
+(provide 'fq-melpa-init)
+;;; fq-melpa-init ends here

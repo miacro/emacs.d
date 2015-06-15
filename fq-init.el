@@ -1,10 +1,10 @@
 ;;; fq-init --- Summary
 ;;; Commentary:
 ;;; Code:
-(add-to-list 'load-path "~/fq-emacs.d/lisp")
+(require 'fq-load-path)
+(require 'fq-el-get)
+;;(require 'fq-melpa)
 
-(require 'fq-elpa)
-(require 'fq-package-install)
 (require 'fq-slime)
 (require 'fq-yasnippet)
 ;; auto-complete completion
