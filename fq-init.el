@@ -7,6 +7,7 @@
 (require 'fq-package-install)
 (require 'fq-slime)
 (require 'fq-yasnippet)
+;; auto-complete completion
 ;;(require 'fq-auto-complete)
 ;;(require 'fq-auto-complete-clang)
 ;;(require 'fq-auto-complete-clang-async)
@@ -21,7 +22,8 @@
 (require 'fq-company)
 (require 'fq-slime-company)
 (require 'fq-company-cmake)
-(require 'fq-ycmd)
+;; ycmd completion
+;;(require 'fq-ycmd)
 (require 'fq-flycheck)
 (require 'fq-highlight-defined)
 (require 'fq-google-c-style)
