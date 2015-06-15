@@ -14,7 +14,7 @@
 (require 'fq-w3m)
 (require 'fq-ecb)
 (require 'fq-smex)
-(require 'fq-pcomplete)
+;;(require 'fq-pcomplete)
 (require 'fq-evil)
 (require 'fq-magit)
 (require 'fq-git)
