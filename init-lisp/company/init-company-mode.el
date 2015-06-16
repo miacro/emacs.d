@@ -1,4 +1,4 @@
-;;; init-company --- Summary
+;;; init-company-mode --- Summary
 ;;; Commentary:
 ;;; Code:
 (require 'company)
@@ -11,5 +11,5 @@
 (define-key company-active-map (kbd "\C-d") 'company-show-doc-buffer)
 (define-key company-active-map (kbd "<tab>") 'company-complete)
 
-(provide 'init-company)
-;;; init-company ends here
+(provide 'init-company-mode)
+;;; init-company-mode ends here
