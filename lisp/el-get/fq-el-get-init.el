@@ -12,5 +12,24 @@
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
+
+
+;;; just for test
+(defun check-compile-options ()
+  (interactive)
+  (irony-cdb-json--ensure-project-alist-loaded)
+  (irony--aif (irony-cdb-json--locate-db)
+              (progn
+                (message "I: found compilation database: %s" it)
+                (let ((db (irony-cdb-json--load-db it)))
+                  (irony--aif (irony-cdb-json--exact-flags db)
+                              (progn
+                                (message "I: found exact match: %s" it)
+                                it)
+                              (let ((dir-cdb (irony-cdb-json--compute-directory-cdb db)))
+                                (irony--aif (irony-cdb-json--guess-flags dir-cdb)
+                                            (message "I: found by guessing: %s" it)
+                                            (message "E: guessing failed"))))))
+              (message "E: failed to locate compilation database")))
 (provide 'fq-el-get-init)
 ;;; fq-el-get-init ends here
