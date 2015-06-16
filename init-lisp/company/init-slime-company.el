@@ -1,7 +1,7 @@
 ;;; init-slime-company --- Summary
 ;;; Commentary:
 ;;; Code:
-;;(require 'slime-company)
+(require 'slime-company)
 (slime-setup '(slime-company))
 (define-key company-active-map (kbd "\C-n") 'company-select-next)
 (define-key company-active-map (kbd "\C-p") 'company-select-previous)
