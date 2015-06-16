@@ -1,4 +1,4 @@
-;;; init-ycmd --- Summary
+;;; init-emacs-ycmd --- Summary
 ;;; Commentary:
 ;;; Code:
 (require 'ycmd)
@@ -11,5 +11,5 @@
 (company-ycmd-setup)
 (require 'flycheck-ycmd)
 (flycheck-ycmd-setup)
-(provide 'init-ycmd)
-;;; init-ycmd ends here
+(provide 'init-emacs-ycmd)
+;;; init-emacs-ycmd ends here

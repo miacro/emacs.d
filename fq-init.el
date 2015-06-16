@@ -25,7 +25,7 @@
 (require 'init-company-cmake)
 (require 'init-highlight-symbol)
 ;; ycmd completion
-;;(require 'init-ycmd)
+;;(require 'init-emacs-ycmd)
 (require 'init-irony-mode)
 (require 'init-company-irony)
 (require 'init-flycheck-irony)
