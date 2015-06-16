@@ -11,6 +11,7 @@
 ;;(el-get-bundle clang-complete-async)
 
 (el-get-bundle emacs-w3m)
+(el-get-bundle org-mode)
 ;;(el-get-bundle ecb)
 (el-get-bundle emms)
 (el-get-bundle evil)
