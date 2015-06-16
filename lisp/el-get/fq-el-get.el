@@ -40,5 +40,6 @@
 (el-get-bundle Sarcasm/flycheck-irony)
 (el-get-bundle ikirill/irony-eldoc)
 (el-get-bundle google-c-style)
+(el-get-bundle doxymacs)
 (provide 'fq-el-get)
 ;;; fq-el-get ends here
