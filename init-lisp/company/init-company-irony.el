@@ -1,4 +1,4 @@
-;;; fq-company-irony --- Summary
+;;; init-company-irony --- Summary
 ;;; Commentary:
 ;;; Code:
 (eval-after-load 'company
@@ -8,5 +8,5 @@
 ;; trigger completion at interesting places, such as after scope operator
 ;;     std::|
 (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
-(provide 'fq-company-irony)
-;;; fq-company-irony ends here
+(provide 'init-company-irony)
+;;; init-company-irony ends here

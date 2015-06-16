@@ -1,4 +1,4 @@
-;;; fq-org-mode --- Summary
+;;; init-org-mode --- Summary
 ;;; Commentary:
 ;;; Code:
 (add-to-list 'load-path "~/github/emacs/org-mode" t)
@@ -12,5 +12,5 @@
 (setq truncate-lines nil)
 
 (require 'org-mode)
-(provide 'fq-org-mode)
-;;; fq-org-mode ends here
+(provide 'init-org-mode)
+;;; init-org-mode ends here

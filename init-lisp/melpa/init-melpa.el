@@ -1,7 +1,7 @@
-;;; fq-melpa --- Summary
+;;; init-melpa --- Summary
 ;;; Commentary:
 ;;; Code:
-(require 'fq-melpa-init)
+(require 'init-melpa-setup)
 ;;(package-install 'el-get)
 ;;(package-install '2048-game)
 ;;(package-install 'ac-math)
@@ -42,5 +42,5 @@
 ;;(package-install 'yasnippet)
 ;;(package-install 'ycmd)
 ;;(package-install 'google-c-style)
-(provide 'fq-melpa)
-;;; fq-melpa ends here
+(provide 'init-melpa)
+;;; init-melpa ends here

@@ -1,7 +1,7 @@
-;;; fq-doxymacs --- Summary
+;;; init-doxymacs --- Summary
 ;;; Commentary:
 ;;; Code
 (require 'doxymacs)
 (add-hook 'c-mode-common-hook 'doxymacs-mode)
-(provide 'fq-doxymacs)
-;;; fq-doxymacs ends here
+(provide 'init-doxymacs)
+;;; init-doxymacs ends here

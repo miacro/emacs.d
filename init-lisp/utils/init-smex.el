@@ -1,4 +1,4 @@
-;;; fq-smex --- Summary
+;;; init-smex --- Summary
 ;;; Commentary:
 ;;; Code:
 (require 'smex) ; Not needed if you use package.el
@@ -8,5 +8,5 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-(provide 'fq-smex)
-;;; fq-smex ends here
+(provide 'init-smex)
+;;; init-smex ends here

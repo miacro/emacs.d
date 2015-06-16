@@ -1,4 +1,4 @@
-;;; fq-slime --- Summary
+;;; init-slime --- Summary
 ;;; Commentary:
 ;;; Code:
 ;; Setup load-path, autoloads and your lisp system
@@ -6,5 +6,5 @@
 ;;(add-to-list 'load-path "~/github/slime")
 (require 'slime-autoloads)
 (setq inferior-lisp-program "/usr/bin/sbcl")
-(provide 'fq-slime)
-;;; fq-slime ends here
+(provide 'init-slime)
+;;; init-slime ends here

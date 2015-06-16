@@ -1,4 +1,4 @@
-;;; fq-el-get-init --- Summary
+;;; init-el-get-setup --- Summary
 ;;; Commentary:
 ;;; Code:
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -12,7 +12,7 @@
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
-
+;;(add-to-list 'el-get-user-package-directory "~/fq-emacs.d/init-lisp/")
 
 ;;; just for test
 (defun check-compile-options ()
@@ -31,5 +31,5 @@
                                             (message "I: found by guessing: %s" it)
                                             (message "E: guessing failed"))))))
               (message "E: failed to locate compilation database")))
-(provide 'fq-el-get-init)
-;;; fq-el-get-init ends here
+(provide 'init-el-get-setup)
+;;; init-el-get-setup ends here

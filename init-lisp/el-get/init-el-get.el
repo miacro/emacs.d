@@ -1,16 +1,15 @@
-;;; fq-el-get --- Summary
+;;; init-el-get --- Summary
 ;;; Commentary:
 ;;; Code:
-(require 'fq-el-get-init)
+(require 'init-el-get-setup)
 (el-get-bundle emacs-w3m)
 (el-get-bundle 2048.el)
-(el-get-bundle ac-math)
 ;;(el-get-bundle auto-complete)
 ;;(el-get-bundle auto-complete-clang)
-;;(el-get-bundle elpa:auto-complete-clang-async)
+;;(el-get-bundle clang-complete-async)
+;;(el-get-bundle ac-math)
 (el-get-bundle color-theme)
 (el-get-bundle color-theme-solarized)
-(el-get-bundle company-mode)
 (el-get-bundle dash)
 (el-get-bundle deferred)
 ;;(el-get-bundle ecb)
@@ -20,12 +19,11 @@
 (el-get-bundle f)
 (el-get-bundle flycheck)
 (el-get-bundle goto-chg)
-(el-get-bundle elpa:highlight-defined)
+(el-get-bundle highlight-symbol)
 (el-get-bundle let-alist)
 (el-get-bundle magit)
 (el-get-bundle math-symbol-lists)
 (el-get-bundle mew)
-(el-get-bundle elpa:pcomplete-extension)
 (el-get-bundle pkg-info)
 (el-get-bundle popup)
 (el-get-bundle s)
@@ -34,12 +32,14 @@
 (el-get-bundle smex)
 (el-get-bundle undo-tree)
 (el-get-bundle yasnippet)
+(el-get-bundle doxymacs)
+(el-get-bundle google-c-style)
+
+(el-get-bundle company-mode)
 ;;(el-get-bundle emacs-ycmd)
 (el-get-bundle Sarcasm/irony-mode)
 (el-get-bundle Sarcasm/company-irony)
 (el-get-bundle Sarcasm/flycheck-irony)
 (el-get-bundle ikirill/irony-eldoc)
-(el-get-bundle google-c-style)
-(el-get-bundle doxymacs)
-(provide 'fq-el-get)
-;;; fq-el-get ends here
+(provide 'init-el-get)
+;;; init-el-get ends here

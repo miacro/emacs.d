@@ -1,4 +1,4 @@
-;;; fq-irony-mode --- Summary
+;;; init-irony-mode --- Summary
 ;;; Commentary:
 ;;; Code:
 (add-hook 'c++-mode-hook 'irony-mode)
@@ -14,5 +14,5 @@
               'irony-completion-at-point-async))
 ;;(add-hook 'irony-mode-hook 'my-irony-mode-hook)
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-(provide 'fq-irony-mode)
-;;; fq-irony-mode ends here
+(provide 'init-irony-mode)
+;;; init-irony-mode ends here
