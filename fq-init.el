@@ -12,7 +12,7 @@
 ;;(require 'fq-auto-complete-clang)
 ;;(require 'fq-auto-complete-clang-async)
 (require 'fq-w3m)
-(require 'fq-ecb)
+;;(require 'fq-ecb)
 (require 'fq-smex)
 (require 'fq-pcomplete)
 (require 'fq-evil)

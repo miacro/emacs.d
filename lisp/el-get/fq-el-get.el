@@ -13,7 +13,7 @@
 (el-get-bundle company-mode)
 (el-get-bundle dash)
 (el-get-bundle deferred)
-(el-get-bundle ecb)
+;;(el-get-bundle ecb)
 (el-get-bundle emms)
 (el-get-bundle epl)
 (el-get-bundle evil)
