@@ -30,6 +30,7 @@
 (require 'init-company-irony)
 (require 'init-flycheck-irony)
 (require 'init-irony-eldoc)
+(require 'init-clang-format)
 
 (require 'fq-fonts)
 (require 'fq-theme)
