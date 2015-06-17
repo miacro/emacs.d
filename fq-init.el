@@ -19,6 +19,7 @@
 (require 'init-doxymacs)
 (require 'init-flycheck)
 (require 'init-google-c-style)
+(require 'init-slim-mode)
 
 (require 'init-company-mode)
 (require 'init-slime-company)
