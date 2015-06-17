@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (require 'fq-load-path)
-(require 'init-el-get)
+(require 'fq-packages-install)
 (require 'init-melpa)
 
 (require 'init-slime)
@@ -23,6 +23,7 @@
 (require 'init-company-mode)
 (require 'init-slime-company)
 (require 'init-company-cmake)
+(require 'init-company-c-headers)
 (require 'init-highlight-symbol)
 ;; ycmd completion
 ;;(require 'init-emacs-ycmd)

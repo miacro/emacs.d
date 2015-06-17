@@ -1,36 +1,35 @@
 ;;; init-el-get --- Summary
 ;;; Commentary:
 ;;; Code:
-(require 'init-el-get-setup)
-(el-get-bundle 2048.el)
-(el-get-bundle color-theme)
-(el-get-bundle color-theme-solarized)
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
-;;(el-get-bundle auto-complete)
-;;(el-get-bundle auto-complete-clang)
-;;(el-get-bundle clang-complete-async)
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+    (url-retrieve-synchronously
+      "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
 
-(el-get-bundle emacs-w3m)
-(el-get-bundle org-mode)
-;;(el-get-bundle ecb)
-(el-get-bundle emms)
-(el-get-bundle evil)
-(el-get-bundle flycheck)
-(el-get-bundle highlight-symbol)
-(el-get-bundle magit)
-(el-get-bundle slime)
-(el-get-bundle smex)
-(el-get-bundle yasnippet)
-(el-get-bundle doxymacs)
-(el-get-bundle google-c-style)
-(el-get-bundle clang-format)
-;;(el-get-bundle emacs-ycmd)
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(el-get 'sync)
+;;(add-to-list 'el-get-user-package-directory "~/fq-emacs.d/init-lisp/")
 
-(el-get-bundle company-mode)
-(el-get-bundle Sarcasm/irony-mode)
-(el-get-bundle Sarcasm/company-irony)
-(el-get-bundle Sarcasm/flycheck-irony)
-(el-get-bundle ikirill/irony-eldoc)
-(el-get-bundle slime-company)
+;;; just for test
+(defun check-compile-options ()
+  (interactive)
+  (irony-cdb-json--ensure-project-alist-loaded)
+  (irony--aif (irony-cdb-json--locate-db)
+              (progn
+                (message "I: found compilation database: %s" it)
+                (let ((db (irony-cdb-json--load-db it)))
+                  (irony--aif (irony-cdb-json--exact-flags db)
+                              (progn
+                                (message "I: found exact match: %s" it)
+                                it)
+                              (let ((dir-cdb (irony-cdb-json--compute-directory-cdb db)))
+                                (irony--aif (irony-cdb-json--guess-flags dir-cdb)
+                                            (message "I: found by guessing: %s" it)
+                                            (message "E: guessing failed"))))))
+              (message "E: failed to locate compilation database")))
 (provide 'init-el-get)
 ;;; init-el-get ends here
