@@ -38,5 +38,6 @@
 (setq default-tab-width 4)
 (setq-default indent-tabs-mode nil)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(global-auto-revert-mode t)
 (provide 'fq-config)
 ;;; fq-config ends here
