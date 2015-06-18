@@ -33,6 +33,7 @@
 (require 'init-flycheck-irony)
 (require 'init-irony-eldoc)
 (require 'init-clang-format)
+(require 'init-e2wm)
 
 (require 'fq-fonts)
 (require 'fq-theme)

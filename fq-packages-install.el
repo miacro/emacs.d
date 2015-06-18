@@ -25,6 +25,7 @@
 (el-get-bundle doxymacs)
 (el-get-bundle google-c-style)
 (el-get-bundle clang-format)
+(el-get-bundle e2wm)
 ;;(el-get-bundle emacs-ycmd)
 
 (el-get-bundle company-mode)
