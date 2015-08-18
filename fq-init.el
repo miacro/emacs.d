@@ -35,6 +35,7 @@
 (require 'init-clang-format)
 (require 'init-e2wm)
 (require 'init-flex-mode)
+(require 'init-bison-mode)
 
 (require 'fq-fonts)
 (require 'fq-theme)
