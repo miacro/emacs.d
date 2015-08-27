@@ -4,8 +4,8 @@
 (global-linum-mode t)
 (setq inhibit-startup-buffer-menu t)
 ;;(setq inhibit-startup-screen nil)
-;;(tool-bar-mode 0)
-;;(menu-bar-mode 0)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
 (setq gdb-many-windows t)
 (scroll-bar-mode 0)
 (custom-set-variables
