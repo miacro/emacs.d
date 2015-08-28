@@ -31,6 +31,7 @@
 (mouse-avoidance-mode 'animate)
 ;;(setq mouse-yank-at-point t)
 ;;(transient-mark-mode t)
+(desktop-save-mode 1)
 
 (setq x-select-enable-clipboard t)
 (setq frame-title-format '("" buffer-file-name "@emacs" ))
