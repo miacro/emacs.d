@@ -28,7 +28,7 @@
 (el-get-bundle e2wm)
 (el-get-bundle flex-mode)
 (el-get-bundle bison-mode)
-;;(el-get-bundle emacs-ycmd)
+(el-get-bundle emacs-ycmd)
 
 (el-get-bundle company-mode)
 (el-get-bundle irony-mode)
