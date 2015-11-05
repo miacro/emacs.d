@@ -54,18 +54,18 @@
 (el-get-bundle highlight-symbol)
 (require 'init-highlight-symbol)
 ;;;; ycmd completion
-;;(el-get-bundle emacs-ycmd)
-;;(require 'init-emacs-ycmd)
+(el-get-bundle emacs-ycmd)
+(require 'init-emacs-ycmd)
 
 ;;;; irony-mode
-(el-get-bundle irony-mode)
-(require 'init-irony-mode)
-(el-get-bundle company-irony)
-(require 'init-company-irony)
-(el-get-bundle flycheck-irony)
-(require 'init-flycheck-irony)
-(el-get-bundle irony-eldoc)
-(require 'init-irony-eldoc)
+;;(el-get-bundle irony-mode)
+;;(require 'init-irony-mode)
+;;(el-get-bundle company-irony)
+;;(require 'init-company-irony)
+;;(el-get-bundle flycheck-irony)
+;;(require 'init-flycheck-irony)
+;;(el-get-bundle irony-eldoc)
+;;(require 'init-irony-eldoc)
 
 (el-get-bundle clang-format)
 (require 'init-clang-format)
