@@ -10,6 +10,7 @@
 
 (el-get-bundle org-mode)
 (el-get-bundle emms)
+(el-get-bundle js2-mode)
 (require 'init-melpa)
 
 (el-get-bundle slime)
@@ -75,6 +76,7 @@
 (require 'init-flex-mode)
 (el-get-bundle bison-mode)
 (require 'init-bison-mode)
+
 
 (require 'fq-fonts)
 (require 'fq-theme)
