@@ -9,6 +9,13 @@
 (transient-mark-mode 1)
 (setq truncate-lines nil)
 
+;;;#+LATEX_HEADER: \usepackage{xeCJK}
+;;;#+LATEX_HEADER: \setCJKmainfont{Source Han Sans CN}
+(setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f"
+                              "xelatex -interaction nonstopmode %f"))
+(setq org-latex-default-packages-alist
+      (remove '("AUTO" "inputenc" t) org-latex-default-packages-alist))
+
 (require 'org-mode)
 (provide 'init-org-mode)
 ;;; init-org-mode ends here
