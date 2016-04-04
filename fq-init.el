@@ -77,6 +77,8 @@
 (el-get-bundle bison-mode)
 (require 'init-bison-mode)
 
+(el-get-bundle ace-jump-mode)
+
 
 (require 'fq-fonts)
 (require 'fq-theme)
