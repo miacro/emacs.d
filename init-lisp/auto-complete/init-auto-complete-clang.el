@@ -1,4 +1,4 @@
-;;; fq-auto-complete-clang --- Summary
+;;; init-auto-complete-clang --- Summary
 ;;; Commentary:
 ;;; Code:
 (require 'auto-complete-clang)
@@ -47,5 +47,5 @@
                 )))
 
 (my-ac-config)
-(provide 'fq-auto-complete-clang)
-;;; fq-auto-complete-clang ends here
+(provide 'init-auto-complete-clang)
+;;; init-auto-complete-clang ends here

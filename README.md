@@ -1,2 +1,2 @@
-# fq-emacs.d
+# emacs.d
 my emacs configuration files

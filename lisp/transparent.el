@@ -1,4 +1,4 @@
-;;; fq-transparent --- Summary
+;;; transparent --- Summary
 ;;; Commentary:
 ;;; Code:
 (global-set-key [(f8)] 'loop-alpha)
@@ -13,5 +13,5 @@
     (setq alpha-list (cdr (append alpha-list (list h))))
     )
   )
-(provide 'fq-transparent)
-;;; fq-transparent ends here
+(provide 'transparent)
+;;; transparent ends here

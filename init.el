@@ -1,7 +1,13 @@
-;;; fq-init --- Summary
+;;; init --- Summary
 ;;; Commentary:
 ;;; Code:
-(require 'fq-load-path)
+(add-to-list 'load-path "~/emacs.d/lisp")
+(add-to-list 'load-path "~/emacs.d/init-lisp")
+(add-to-list 'load-path "~/emacs.d/init-lisp/company")
+(add-to-list 'load-path "~/emacs.d/init-lisp/melpa")
+(add-to-list 'load-path "~/emacs.d/init-lisp/el-get")
+(add-to-list 'load-path "~/emacs.d/init-lisp/utils")
+
 (require 'init-el-get)
 
 (el-get-bundle 2048.el)
@@ -80,12 +86,12 @@
 (el-get-bundle srefactor)
 (require 'init-srefactor)
 (el-get-bundle ace-jump-mode)
+(el-get-bundle graphviz-dot-mode)
 
-
-(require 'fq-fonts)
-(require 'fq-theme)
-(require 'fq-transparent)
-(require 'fq-keybinding)
-(require 'fq-config)
-(provide 'fq-init)
-;;; fq-init ends here
+(require 'fonts)
+(require 'theme)
+(require 'transparent)
+(require 'keybinding)
+(require 'config)
+(provide 'init)
+;;; init ends here

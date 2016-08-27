@@ -12,7 +12,7 @@
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
-;;(add-to-list 'el-get-user-package-directory "~/fq-emacs.d/init-lisp/")
+;;(add-to-list 'el-get-user-package-directory "~/emacs.d/init-lisp/")
 
 ;;; just for test
 (defun check-compile-options ()

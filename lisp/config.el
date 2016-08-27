@@ -1,4 +1,4 @@
-;;; fq-config --- Summary
+;;; config --- Summary
 ;;; Commentary:
 ;;; Code:
 (global-linum-mode t)
@@ -41,5 +41,5 @@
 (setq-default indent-tabs-mode nil)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (global-auto-revert-mode t)
-(provide 'fq-config)
-;;; fq-config ends here
+(provide 'config)
+;;; config ends here
