@@ -37,6 +37,8 @@
 ;;(require 'init-ecb)
 (el-get-bundle smex)
 (require 'init-smex)
+
+;;(el-get-bundle elpa:undo-tree)
 (el-get-bundle evil)
 (require 'init-evil)
 (el-get-bundle magit)
@@ -78,8 +80,6 @@
 (require 'init-clang-format)
 (el-get-bundle e2wm)
 (require 'init-e2wm)
-(el-get-bundle flex-mode)
-(require 'init-flex-mode)
 (el-get-bundle bison-mode)
 (require 'init-bison-mode)
 
