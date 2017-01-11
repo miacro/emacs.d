@@ -1,12 +1,12 @@
 ;;; init --- Summary
 ;;; Commentary:
 ;;; Code:
-(add-to-list 'load-path "~/emacs.d/lisp")
-(add-to-list 'load-path "~/emacs.d/init-lisp")
-(add-to-list 'load-path "~/emacs.d/init-lisp/company")
-(add-to-list 'load-path "~/emacs.d/init-lisp/melpa")
-(add-to-list 'load-path "~/emacs.d/init-lisp/el-get")
-(add-to-list 'load-path "~/emacs.d/init-lisp/utils")
+(add-to-list 'load-path "~/.emacs.me/lisp")
+(add-to-list 'load-path "~/.emacs.me/init-lisp")
+(add-to-list 'load-path "~/.emacs.me/init-lisp/company")
+(add-to-list 'load-path "~/.emacs.me/init-lisp/melpa")
+(add-to-list 'load-path "~/.emacs.me/init-lisp/el-get")
+(add-to-list 'load-path "~/.emacs.me/init-lisp/utils")
 
 (require 'init-el-get)
 
