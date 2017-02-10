@@ -1,5 +1,5 @@
 SOURCE_DIR=`pwd`
-TARGET_DIR=${HOME}/.emacs.me
+TARGET_DIR=${HOME}/.emacs.d
 MAKE=make --no-print-directory
 SHELL=/bin/bash
 
