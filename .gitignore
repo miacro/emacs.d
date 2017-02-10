@@ -1,6 +1,3 @@
-/fq-installed/**
-!/fq-installed/*.el
-
 *.swp
 
 *\~
@@ -39,3 +36,11 @@ tramp
 
 # cask packages
 .cask/
+
+/*
+!.gitignore  
+!/init.el  
+!/init-lisp  
+!/lisp  
+!/Makefile  
+!/README.md
