@@ -15,10 +15,9 @@
 (add-to-load-path-based-on-current-lisp-file "lisp")
 (add-to-load-path-based-on-current-lisp-file "init-lisp")
 (add-to-load-path-based-on-current-lisp-file "init-lisp/company")
-(add-to-load-path-based-on-current-lisp-file "init-lisp/melpa")
-(add-to-load-path-based-on-current-lisp-file "init-lisp/el-get")
+(add-to-load-path-based-on-current-lisp-file "init-lisp/package-manager")
 (add-to-load-path-based-on-current-lisp-file "init-lisp/utils")
-
+(require 'init-melpa)
 (require 'init-el-get)
 
 (el-get-bundle 2048.el)
@@ -28,7 +27,6 @@
 (el-get-bundle org-mode)
 (el-get-bundle emms)
 (el-get-bundle js2-mode)
-(require 'init-melpa)
 
 (el-get-bundle slime)
 (require 'init-slime)
