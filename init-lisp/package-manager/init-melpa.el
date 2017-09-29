@@ -1,4 +1,4 @@
-;;; init-melpa-setup --- Summary
+;;; init-melpa --- Summary
 ;;; Commentary:
 ;;; Code:
 (require 'package) ;; You might already have this line
@@ -15,5 +15,5 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
-(provide 'init-melpa-setup)
-;;; init-melpa-setup ends here
+(provide 'init-melpa)
+;;; init-melpa ends here
