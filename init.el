@@ -30,6 +30,7 @@
   (el-get-bundle js2-mode)
   (el-get-bundle s)
   (el-get-bundle f)
+  (el-get-bundle let-alist)
   
   (el-get-bundle slime)
   (require 'init-slime)
