@@ -1,10 +1,9 @@
 ;;; theme --- Summary
 ;;; Commentary:
 ;;; Code:
-(if (display-graphic-p)
-  (progn
-    (require 'color-theme)
-    (require 'color-theme-solarized)
-    (color-theme-solarized-dark)))
+(require 'color-theme)
+(require 'color-theme-solarized)
+(load-theme 'solarized t)
+(when (display-graphic-p) nil)
 (provide 'theme)
 ;;; theme ends here
