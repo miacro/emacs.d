@@ -107,6 +107,13 @@
   (el-get-bundle ace-jump-mode)
   (el-get-bundle graphviz-dot-mode)
 
+  (when (not (string= (el-get-read-package-status "elpy") "installed"))
+    (message 
+      (shell-command-to-string 
+        "pip install --user jedi flake8 importmagic autopep8 yapf"))
+    (el-get-bundle elpy)
+    (require 'init-elpy))
+
   (require 'fonts)
   (require 'theme)
   (require 'transparent)
