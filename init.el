@@ -9,6 +9,7 @@
 ;(package-initialize)
 
 (defun add-to-load-path-based-on-current-lisp-file (subdir)
+  "Add SUBDIR of basedir to load path."
   (add-to-list 'load-path
    (concat
     (file-name-directory load-file-name) subdir)))
@@ -108,11 +109,12 @@
   (el-get-bundle graphviz-dot-mode)
 
   (when (not (string= (el-get-read-package-status "elpy") "installed"))
-    (message 
-      (shell-command-to-string 
+    (message
+      (shell-command-to-string
         "pip install --user jedi flake8 importmagic autopep8 yapf"))
     (el-get-bundle elpy)
     (require 'init-elpy))
+  (el-get-bundle ein)
 
   (require 'fonts)
   (require 'theme)
