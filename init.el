@@ -58,7 +58,10 @@
   ;;(el-get-bundle elpa:undo-tree)
   (el-get-bundle evil)
   (require 'init-evil)
+
+  (el-get-bundle ghub)
   (el-get-bundle magit)
+
   (require 'init-magit)
   (el-get-bundle doxymacs)
   (require 'init-doxymacs)
@@ -114,6 +117,7 @@
         "pip install --user jedi flake8 importmagic autopep8 yapf"))
     (el-get-bundle elpy)
     (require 'init-elpy))
+  (el-get-bundle skewer-mode)
   (el-get-bundle ein)
 
   (require 'fonts)
