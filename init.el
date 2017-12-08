@@ -7,19 +7,39 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 ;(package-initialize)
+(require 'package) 
+(dolist (repo '(("melpa" . "http://melpa.org/packages/")
+                ;; ("melpa-stable" . "http://stable.melpa.org/packages/")
+                ;; ("marmalade" . "http://marmalade-repo.org/packages/")
+                ;; ("orgmode" . "http://orgmode.org/elpa/")
+                ))
+  (add-to-list 'package-archives repo t))
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
-(defun add-to-load-path-based-on-current-lisp-file (subdir)
-  "Add SUBDIR of basedir to load path."
-  (add-to-list 'load-path
-   (concat
-    (file-name-directory load-file-name) subdir)))
-(add-to-load-path-based-on-current-lisp-file "lisp")
-(add-to-load-path-based-on-current-lisp-file "init-lisp")
-(add-to-load-path-based-on-current-lisp-file "init-lisp/company")
-(add-to-load-path-based-on-current-lisp-file "init-lisp/package-manager")
-(add-to-load-path-based-on-current-lisp-file "init-lisp/utils")
-(require 'init-el-get)
-(require 'init-melpa)
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get/")
+(unless (require 'el-get nil 'noerror)
+  (package-refresh-contents)
+  (package-initialize)
+  (package-install 'el-get))
+
+(require 'el-get)
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(el-get 'sync)
+(package-initialize)
+
+(defun add-to-load-path-recursively (dir)
+  "Add DIR to 'load-path' recursively."
+  (add-to-list 'load-path dir)
+  (dolist (file (directory-files-recursively dir ".*" t))
+    (when (file-directory-p file)
+      (add-to-list 'load-path file))))
+
+(add-to-load-path-recursively
+ (concat (file-name-directory load-file-name) "init-lisp"))
+(add-to-load-path-recursively
+ (concat (file-name-directory load-file-name) "lisp"))
 
 (when (require 'el-get nil 'noerror)
   (el-get-bundle helm)
@@ -40,13 +60,9 @@
   (require 'init-slime)
   (el-get-bundle yasnippet)
   (require 'init-yasnippet)
-  ;;;; auto-complete completion
   ;;(el-get-bundle auto-complete)
-  ;;(require 'init-auto-complete)
   ;;(el-get-bundle auto-complete-clang)
-  ;;(require 'init-auto-complete-clang)
   ;;(el-get-bundle clang-complete-async)
-  ;;(require 'init-auto-complete-clang-async)
 
   (el-get-bundle emacs-w3m)
   (require 'init-emacs-w3m)
@@ -117,8 +133,8 @@
         "pip install --user jedi flake8 importmagic autopep8 yapf"))
     (el-get-bundle elpy)
     (require 'init-elpy))
-  (el-get-bundle skewer-mode)
-  (el-get-bundle ein)
+  ;;(el-get-bundle skewer-mode)
+  ;;(el-get-bundle ein)
 
   (require 'fonts)
   (require 'theme)
@@ -128,4 +144,3 @@
 
 (provide 'init)
 ;;; init ends here
-(put 'dired-find-alternate-file 'disabled nil)
