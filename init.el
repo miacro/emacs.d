@@ -7,7 +7,7 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 ;(package-initialize)
-(require 'package) 
+(require 'package)
 (dolist (repo '(("melpa" . "http://melpa.org/packages/")
                 ;; ("melpa-stable" . "http://stable.melpa.org/packages/")
                 ;; ("marmalade" . "http://marmalade-repo.org/packages/")
