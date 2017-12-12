@@ -1,7 +1,9 @@
 ;;; config --- Summary
 ;;; Commentary:
 ;;; Code:
-(global-linum-mode t)
+
+;;(global-linum-mode t)
+(add-hook 'prog-mode-hook 'linum-mode)
 (setq inhibit-startup-buffer-menu t)
 ;;(setq inhibit-startup-screen nil)
 (tool-bar-mode 0)
