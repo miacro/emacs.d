@@ -130,9 +130,9 @@
   (when (not (string= (el-get-read-package-status "elpy") "installed"))
     (message
       (shell-command-to-string
-        "pip install --user jedi flake8 importmagic autopep8 yapf"))
-    (el-get-bundle elpy)
-    (require 'init-elpy))
+        "pip install --user jedi flake8 importmagic autopep8 yapf")))
+  (el-get-bundle elpy)
+  (require 'init-elpy)
   ;;(el-get-bundle skewer-mode)
   ;;(el-get-bundle ein)
 
