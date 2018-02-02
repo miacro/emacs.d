@@ -15,7 +15,6 @@
                               "xelatex -interaction nonstopmode %f"))
 (setq org-latex-default-packages-alist
       (remove '("AUTO" "inputenc" t) org-latex-default-packages-alist))
-
 (require 'org-mode)
 (provide 'init-org-mode)
 ;;; init-org-mode ends here
