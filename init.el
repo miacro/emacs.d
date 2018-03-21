@@ -136,6 +136,8 @@
   ;;(el-get-bundle skewer-mode)
   ;;(el-get-bundle ein)
 
+  (el-get-bundle yaml-mode)
+
   (require 'fonts)
   (require 'theme)
   (require 'transparent)
