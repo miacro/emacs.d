@@ -42,5 +42,7 @@
 (setq-default indent-tabs-mode nil)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (global-auto-revert-mode t)
+
+(setq search-default-mode t)
 (provide 'config)
 ;;; config ends here
