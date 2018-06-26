@@ -143,6 +143,7 @@
   (require 'transparent)
   (require 'keybinding)
   (require 'config))
+  (require 'miacro-server)
 
 (provide 'init)
 ;;; init ends here
