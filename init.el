@@ -138,7 +138,7 @@
 
   (el-get-bundle yaml-mode)
 
-  (require 'fonts)
+  (require 'miacro-fonts)
   (require 'theme)
   (require 'transparent)
   (require 'keybinding)
