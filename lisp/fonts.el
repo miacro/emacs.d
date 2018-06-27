@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (add-to-list 'default-frame-alist
- '(font . "Source Code Pro-13"))
+ '(font . "Source Code Pro-13:style=Regular"))
 
 ;; Setting English Font
 ;;(set-face-attribute
