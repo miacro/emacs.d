@@ -10,5 +10,8 @@
 (global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "<insertchar>"))
 (global-unset-key (kbd "<insert>"))
+
+;;;; output of '$ stty -a' needed erase=^? (not ^H)
+;; (setq normal-erase-is-backspace t)
 (provide 'keybinding)
 ;;; keybinding ends here
