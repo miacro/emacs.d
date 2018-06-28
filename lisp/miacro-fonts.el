@@ -3,11 +3,11 @@
 ;;; Code:
 (defun miacro-create-fontset (charset-font-specs &optional &key size)
   "Create fontset by CHARSET-FONT-SPECS.
-CHARSET-FONT-SPECS: list of alist ('charset' . 'font-spec attributes')
+CHARSET-FONT-SPECS: alist ('charset' . 'font-spec attributes')
 SIZE: font size."
   (dolist (charset-font-spec charset-font-specs)
     (let ((font-spec (apply #'font-spec (cdr charset-font-spec))))
-      (when (not (font-get font-spec :size))
+      (unless (font-get font-spec :size)
         (font-put font-spec :size size))
       (setf (cdr charset-font-spec) (font-xlfd-name font-spec))))
 
