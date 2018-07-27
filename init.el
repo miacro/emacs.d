@@ -79,8 +79,8 @@
   (el-get-bundle magit)
 
   (require 'init-magit)
-  (el-get-bundle doxymacs)
-  (require 'init-doxymacs)
+  ;; (el-get-bundle doxymacs)
+  ;; (require 'init-doxymacs)
   (el-get-bundle flycheck)
   (require 'init-flycheck)
   (el-get-bundle google-c-style)
