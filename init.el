@@ -138,6 +138,9 @@
 
   (el-get-bundle yaml-mode)
 
+  (el-get-bundle dockerfile-mode)
+  (require 'dockerfile-mode)
+
   (require 'miacro-fonts)
   (require 'theme)
   (require 'transparent)
