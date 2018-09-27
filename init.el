@@ -139,6 +139,9 @@
   (el-get-bundle yaml-mode)
 
   (el-get-bundle dockerfile-mode)
+
+  (el-get-bundle protobuf-mode)
+  (require 'init-protobuf-mode)
   (require 'dockerfile-mode)
 
   (require 'miacro-fonts)
