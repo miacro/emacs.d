@@ -50,6 +50,7 @@
   (el-get-bundle color-theme-solarized)
 
   (el-get-bundle org-mode)
+  (require 'init-org-mode)
   (el-get-bundle emms)
   (el-get-bundle js2-mode)
   (el-get-bundle s)
@@ -144,6 +145,8 @@
   (require 'init-protobuf-mode)
   (require 'dockerfile-mode)
 
+  (el-get-bundle plantuml-mode)
+  (require 'init-plantuml-mode)
   (require 'miacro-fonts)
   (require 'theme)
   (require 'transparent)
