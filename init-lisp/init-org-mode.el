@@ -23,12 +23,9 @@
   '(;; other Babel languages
    (plantuml . t)))
 
-(setq org-plantuml-jar-path
-  (expand-file-name
-    (concat
-      (file-name-as-directory
-        (first (el-get-load-path 'plantuml-mode)))
-      (concat (file-name-as-directory "bin") "plantuml.jar"))))
+(when (el-get-package-installed-p 'plantuml-mode)
+  (setq org-plantuml-jar-path plantuml-jar-path)
+  (add-to-list 'org-src-lang-modes '("plantuml" . plantuml)))
 
 (provide 'init-org-mode)
 ;;; init-org-mode ends here
