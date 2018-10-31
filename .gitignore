@@ -44,3 +44,4 @@ tramp
 !/lisp  
 !/Makefile  
 !/README.md
+!/config

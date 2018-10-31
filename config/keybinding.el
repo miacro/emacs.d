@@ -1,7 +1,3 @@
-;;; keybinding --- Summary
-;;; Commentary:
-;;; Code:
-
 ;; (define-key KEYMAP KEY nil)
 ;; (global-unset-key KEY)
 ;; (local-unset-key KEY)
@@ -12,5 +8,3 @@
 (global-unset-key (kbd "<insert>"))
 
 ;; (normal-erase-is-backspace-mode 0)
-(provide 'keybinding)
-;;; keybinding ends here

@@ -1,7 +1,3 @@
-;;; config --- Summary
-;;; Commentary:
-;;; Code:
-
 ;;(global-linum-mode t)
 (add-hook 'prog-mode-hook 'linum-mode)
 (setq inhibit-startup-buffer-menu t)
@@ -9,19 +5,6 @@
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
-  '(inhibit-startup-screen t))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
-  )
-;;(setq make-backup-files nil)
 (column-number-mode t)
 (show-paren-mode t)
 
@@ -44,5 +27,8 @@
 (global-auto-revert-mode t)
 
 (setq search-default-mode t)
-(provide 'config)
-;;; config ends here
+;;(setq make-backup-files nil)
+
+(setq custom-file 
+  (concat 
+    (file-name-directory load-file-name) "emacs-custom.el"))
