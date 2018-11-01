@@ -28,5 +28,7 @@
   (setq org-plantuml-jar-path plantuml-jar-path)
   (add-to-list 'org-src-lang-modes '("plantuml" . plantuml)))
 
+(setq org-html-validation-link nil)
+(setq org-confirm-babel-evaluate nil)
 (provide 'init-org-mode)
 ;;; init-org-mode ends here
