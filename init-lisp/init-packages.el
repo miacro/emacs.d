@@ -26,30 +26,37 @@
 
   (el-get-bundle slime)
   (use-package init-slime)
+
   (el-get-bundle yasnippet)
-  (use-package init-yasnippet)
+  (use-package yasnippet
+    :config
+    (yas-reload-all))
 
   (el-get-bundle emacs-w3m)
-  (use-package init-emacs-w3m)
   ;;(el-get-bundle ecb)
-  ;;(use-package init-ecb)
   ;;(el-get-bundle smex)
-  ;;(use-package init-smex)
 
   ;;(el-get-bundle elpa:undo-tree)
   (el-get-bundle evil)
-  (use-package init-evil)
+  (use-package evil
+    :config
+    (evil-mode 0))
 
-  (el-get-bundle ghub)
   (el-get-bundle magit)
-
-  (use-package init-magit)
-  ;; (el-get-bundle doxymacs)
-  ;; (use-package init-doxymacs)
+  (use-package magit
+    :config
+    (setq magit-auto-revert-mode nil)
+    (setq magit-last-seen-setup-instructions "1.4.0"))
   (el-get-bundle flycheck)
-  (use-package init-flycheck)
+  (use-package flycheck
+    :hook
+    (after-init-hook . global-flycheck-mode))
+
   (el-get-bundle google-c-style)
-  (use-package init-google-c-style)
+  (use-package google-c-style
+    :hook
+    ((c-mode-common-hook . google-set-c-style)
+     (c-mode-common-hook . google-make-newline-indent)))
   (el-get-bundle slim-mode)
   (use-package slim-mode)
 
@@ -83,10 +90,10 @@
   (el-get-bundle irony-mode)
   (use-package irony-mode
     :hook
-    (c++-mode-hook . irony-mode)
-    (c-mode-hook . irony-mode)
-    (objc-mode-hook . irony-mode)
-    (irony-mode-hook . irony-cdb-autosetup-compile-options))
+    ((c++-mode-hook . irony-mode)
+     (c-mode-hook . irony-mode)
+     (objc-mode-hook . irony-mode)
+     (irony-mode-hook . irony-cdb-autosetup-compile-options)))
   (el-get-bundle company-irony)
   (use-package company-irony
     :hook
@@ -114,7 +121,9 @@
      ("C-|" . clang-format-buffer)))
 
   (el-get-bundle e2wm)
-  (use-package init-e2wm)
+  (use-package e2wm
+    :bind
+    (("M-+" . e2wm:start-management)))
 
   (el-get-bundle bison-mode)
   (use-package bison-mode
@@ -141,26 +150,30 @@
     :init
     (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
     :hook
-    (js2-mode-hook . skewer-mode)
-    (css-mode-hook . skewer-css-mode)
-    (html-mode-hook . skewer-html-mode))
+    ((js2-mode-hook . skewer-mode)
+     (css-mode-hook . skewer-css-mode)
+     (html-mode-hook . skewer-html-mode)))
   (el-get-bundle rjsx-mode)
   ;;(el-get-bundle ein)
 
   (el-get-bundle yaml-mode)
 
   (el-get-bundle dockerfile-mode)
+  (use-package dockerfile-mode
+    :config
+    (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode)))
 
   (el-get-bundle protobuf-mode)
-  (use-package init-protobuf-mode)
-  (use-package dockerfile-mode)
+  (use-package protobuf-mode
+    :config
+    (add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode)))
 
   (el-get-bundle plantuml-mode)
   (use-package plantuml-mode
     :config
     (add-to-list 'auto-mode-alist '("\\.plantuml\\'" . plantuml-mode)))
 
-  (package-install 'org-mind-map)
+  (el-get-bundle org-mind-map)
   ;; This is an Emacs package that creates graphviz directed graphs from
   ;; the headings of an org file
   (use-package org-mind-map
