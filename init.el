@@ -39,7 +39,7 @@
 (add-to-load-path-recursively
  (concat (file-name-directory load-file-name) "lisp"))
 
-(require 'init-packages)
+(require 'init-bootstrap)
 
 ;; other configs
 (dolist (configname '("config" "keybinding" "transparent"))
