@@ -28,9 +28,6 @@
   (use-package init-slime)
   (el-get-bundle yasnippet)
   (use-package init-yasnippet)
-  ;;(el-get-bundle auto-complete)
-  ;;(el-get-bundle auto-complete-clang)
-  ;;(el-get-bundle clang-complete-async)
 
   (el-get-bundle emacs-w3m)
   (use-package init-emacs-w3m)
@@ -54,16 +51,28 @@
   (el-get-bundle google-c-style)
   (use-package init-google-c-style)
   (el-get-bundle slim-mode)
-  (use-package init-slim-mode)
+  (use-package slim-mode)
 
   (el-get-bundle company-mode)
-  (use-package init-company-mode)
+  (use-package company-mode
+    :hook
+    (after-init-hook . global-company-mode)
+    :config
+    (setq company-idle-delay 0)
+    (setq company-minimum-prefix-length 2))
+
   (el-get-bundle slime-company)
-  (use-package init-slime-company)
-  ;;(el-get-bundle company-cmake)
-  ;;(use-package init-company-cmake)
+  (use-package slime-company
+    :requires company-mode
+    :config
+    (slime-setup '(slime-company)))
+
   (el-get-bundle company-c-headers)
-  (use-package init-company-c-headers)
+  (use-package company-c-headers
+    :requires company-mode
+    :config
+    (add-to-list 'company-backends 'company-c-headers))
+
   (el-get-bundle highlight-symbol)
   (use-package init-highlight-symbol)
   ;;;; ycmd completion
@@ -71,24 +80,47 @@
   ;;(use-package init-emacs-ycmd)
 
   ;; irony-mode
-  ;;(el-get-bundle irony-mode)
-  ;;(use-package init-irony-mode)
-  ;;(el-get-bundle company-irony)
-  ;;(use-package init-company-irony)
-  ;;(el-get-bundle flycheck-irony)
-  ;;(use-package init-flycheck-irony)
-  ;;(el-get-bundle irony-eldoc)
-  ;;(use-package init-irony-eldoc)
+  (el-get-bundle irony-mode)
+  (use-package irony-mode
+    :hook
+    (c++-mode-hook . irony-mode)
+    (c-mode-hook . irony-mode)
+    (objc-mode-hook . irony-mode)
+    (irony-mode-hook . irony-cdb-autosetup-compile-options))
+  (el-get-bundle company-irony)
+  (use-package company-irony
+    :hook
+    (irony-mode-hook . company-irony-setup-begin-commands)
+    :config
+    (add-to-list 'company-backends 'company-irony))
+  (el-get-bundle flycheck-irony)
+  (use-package flycheck-irony
+    :hook
+    (flycheck-mode-hook . flycheck-irony-setup))
+  (el-get-bundle irony-eldoc)
+  (use-package irony-eldoc
+    :hook
+    (irony-mode-hook . irony-eldoc))
 
   ;; rtags
   ;;(el-get-bundle rtags)
 
   (el-get-bundle clang-format)
-  (use-package init-clang-format)
+  (use-package clang-format
+    ;; :hook
+    ;; (before-save-hook . clang-format-buffer)
+    :bind
+    (("C-=" . clang-format)
+     ("C-|" . clang-format-buffer)))
+
   (el-get-bundle e2wm)
   (use-package init-e2wm)
+
   (el-get-bundle bison-mode)
-  (use-package init-bison-mode)
+  (use-package bison-mode
+    ;; :init
+    ;; (add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
+  )
 
   (el-get-bundle ace-jump-mode)
   (el-get-bundle graphviz-dot-mode)
