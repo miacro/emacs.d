@@ -10,13 +10,5 @@
    (css-mode-hook . skewer-css-mode)
    (html-mode-hook . skewer-html-mode)))
 (el-get-bundle rjsx-mode)
-
-(el-get-bundle ac-js2)
-(use-package ac-js2
- :hook
- (js2-mode-hook . ac-js2-mode)
- :config
- (add-to-list 'company-backends 'ac-js2-company)
- (add-to-list 'js2-mode-hook 'ac-js2-company))
 (provide 'init-misc-javascript)
 ;;; init-misc-javascript ends here
