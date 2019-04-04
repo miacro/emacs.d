@@ -32,3 +32,4 @@
 (setq custom-file 
   (concat 
     (file-name-directory load-file-name) "emacs-custom.el"))
+(setq debug-on-error t)
