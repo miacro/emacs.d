@@ -25,6 +25,8 @@
     :requires color-theme
     :config
     (load-theme 'solarized t)
+    (set-frame-parameter nil 'background-mode 'dark)
+    (enable-theme 'solarized)
     (when (display-graphic-p) nil))
 
   (el-get-bundle emms)
