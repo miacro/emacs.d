@@ -3,8 +3,9 @@
 ;;; Code:
 (el-get-bundle company-mode)
 (use-package company-mode
-  :hook
-  (after-init-hook . global-company-mode)
+  ;; :hook
+  ;; (after-init-hook . global-company-mode)
+  :defer t
   :init
   (add-hook 'after-init-hook 'global-company-mode)
   (setq company-idle-delay 0)
