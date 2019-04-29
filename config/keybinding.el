@@ -6,5 +6,8 @@
 (global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "<insertchar>"))
 (global-unset-key (kbd "<insert>"))
+;; conflict with stumpwm
+(global-unset-key (kbd "C-t"))
+(global-unset-key (kbd "C-x C-t"))
 
 ;; (normal-erase-is-backspace-mode 0)
