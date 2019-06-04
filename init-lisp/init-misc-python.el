@@ -10,7 +10,8 @@
 (use-package elpy
   :ensure-system-package
   ((flake8 . "pip install --user jedi flake8")
-   (autopep8 . "pip install --user autopep8")
+   ;;(autopep8 . "pip install --user autopep8")
+   ;;(black . "pip install --user black")
    (yapf . "pip install --user yapf"))
   ;; :hook
   ;; (python-mode-hook . elpy-mode-enable-test)
