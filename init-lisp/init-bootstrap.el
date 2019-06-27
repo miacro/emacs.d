@@ -11,6 +11,7 @@
   (require 'init-misc-irony)
   (require 'init-misc-lisp)
   (require 'init-misc-org-mode)
+  (require 'init-misc-realgud)
   (el-get-bundle helm)
   (use-package helm
     :requires helm-config ; Not needed if you use package.el
