@@ -4,7 +4,7 @@ MAKE=make --no-print-directory
 SHELL=/bin/bash
 
 reinstall:
-	ln -fs -T ${SRC} ${DST}
+	ln -fs -n ${SRC} ${DST}
 
 uninstall:
 	[[ -L ${DST} ]] && rm ${DST} || exit 0
