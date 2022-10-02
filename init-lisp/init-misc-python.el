@@ -7,6 +7,7 @@
 ;;     (shell-command-to-string
 ;;       "pip install --user jedi flake8 importmagic autopep8 yapf")))
 
+(ensure-python-user-base-path)
 (use-package elpy
   :ensure-system-package
   ((flake8 . "pip install --user jedi flake8")

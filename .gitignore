@@ -45,3 +45,4 @@ tramp
 !/Makefile  
 !/README.md
 !/config
+!/el-get-user

@@ -25,7 +25,7 @@ SIZE: font size."
 (miacro-create-fontset
  '(("fontset-miacro" . (:registry "fontset-miacro"))
    ("iso-8859-1" . (:family "Source Code Pro" :registry "iso10646-1"))
-   ("chinese-gbk" . (:family "Source Han Sans CN" :registry "iso10646-1")))
+   ("chinese-gbk" . (:family "Note Sans CJK SC" :registry "iso10646-1")))
  :size 17)
 
 ;;;; modify the fontset

@@ -20,7 +20,7 @@
           (file-name-directory load-file-name)
           (file-name-as-directory "config")
           configname ".el")))
-(dolist (packagename '(miacro-fonts miacro-server))
+(dolist (packagename '(miacro-fonts miacro-server miacro-utils))
   (require packagename))
 ;;(when (file-exists-p custom-file)
 ;;  (load custom-file))
