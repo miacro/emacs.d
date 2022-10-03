@@ -15,11 +15,15 @@
  (concat (file-name-directory load-file-name) "lisp"))
 
 ;; other configs
-(dolist (configname '("config" "keybinding" "transparent"))
-  (load (concat
+(dolist (configname '("config" "keybinding" "transparent" "proxy"))
+  (let ((config-file
+         (concat
           (file-name-directory load-file-name)
           (file-name-as-directory "config")
           configname ".el")))
+    (when (file-exists-p config-file)
+      (load config-file))))
+
 (dolist (packagename '(miacro-fonts miacro-server miacro-utils))
   (require packagename))
 ;;(when (file-exists-p custom-file)
@@ -50,9 +54,23 @@
   ;; (package-initialize)
   ;; (package-install 'el-get)
   ;; (require 'el-get)
-)
+  )
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+
+;; init straight.el
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 6))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/radian-software/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
 (require 'init-bootstrap)
 (el-get 'sync)
 (provide 'init)

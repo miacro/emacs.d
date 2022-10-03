@@ -1,0 +1,9 @@
+
+;; http proxy
+;; (setq url-proxy-services
+;;       '(("http" . "localhost:7182")
+;;         ("no_proxy" . "(127\\.0\\.0\\.1)|localhost")))
+
+;; socks proxy
+(setq url-gateway-method 'socks)
+(setq socks-server '("Default server" "localhost" 7152 5))
