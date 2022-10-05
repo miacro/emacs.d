@@ -3,6 +3,7 @@
 ;;; Code:
 (when (require 'el-get nil 'noerror)
   (el-get-bundle use-package)
+  ;; (straight-use-package 'use-package)
 
   (require 'init-misc-company)
   (require 'init-misc-javascript)
@@ -33,7 +34,8 @@
   ;;(el-get-bundle smex)
 
   ;;(el-get-bundle elpa:undo-tree)
-  (el-get-bundle evil)
+  (el-get-bundle undo-tree)
+  (straight-use-package 'evil)
   (use-package evil
     :config
     (evil-mode 0))

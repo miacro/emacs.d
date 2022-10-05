@@ -1,0 +1,5 @@
+(:name realgud-node-inspect
+       :type github
+       :pkgname "realgud/realgud-node-inspect"
+       :description "Module to add node inspect's V8-inspector-protocol debugger support to emacs realgud."
+       :depends (realgud))

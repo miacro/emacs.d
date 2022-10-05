@@ -1,0 +1,5 @@
+(:name realgud-ipdb
+       :type github
+       :pkgname "realgud/realgud-ipdb"
+       :description "Emacs Lisp Module to add ipdb support to realgud."
+       :depends (realgud))
