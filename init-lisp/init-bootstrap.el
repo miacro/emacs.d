@@ -11,6 +11,7 @@
   (require 'init-misc-irony)
   (require 'init-misc-lisp)
   (require 'init-misc-org-mode)
+  (require 'init-color-theme)
   (require 'init-misc-realgud)
   (el-get-bundle helm)
   (use-package helm
@@ -19,22 +20,6 @@
     (global-set-key (kbd "M-x") 'helm-M-x)
     (global-set-key (kbd "C-x C-f") 'helm-find-files)
     (helm-mode 1))
-
-  (el-get-bundle color-theme)
-  (el-get-bundle color-theme-solarized)
-  (use-package color-theme-solarized
-    :requires color-theme
-    :init
-    (load-theme 'solarized t)
-    (add-hook 'after-make-frame-functions
-       (lambda (frame)
-         (let ((mode (if (display-graphic-p frame) 'dark 'dark)))
-           (set-frame-parameter frame 'background-mode mode)
-           (set-terminal-parameter frame 'background-mode mode))
-         (enable-theme 'solarized)))
-    (set-frame-parameter nil 'background-mode 'dark)
-    (set-terminal-parameter nil 'background-mode 'dark)
-    (enable-theme 'solarized))
 
   (el-get-bundle emms)
 
