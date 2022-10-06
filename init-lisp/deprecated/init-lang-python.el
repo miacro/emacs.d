@@ -1,4 +1,4 @@
-;;; init-misc-python --- Summary
+;;; init-lang-python --- Summary
 ;;; Commentary:
 ;;; Code:
 (el-get-bundle elpy)
@@ -36,5 +36,5 @@
     (setq python-shell-interpreter "python"
           python-shell-interpreter-args "-i"))))
 ;;(el-get-bundle ein)
-(provide 'init-misc-python)
-;;; init-misc-python ends here
+(provide 'init-lang-python)
+;;; init-lang-python ends here

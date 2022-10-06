@@ -6,14 +6,14 @@
   ;; (straight-use-package 'use-package)
 
   (require 'init-misc-company)
-  (require 'init-misc-javascript)
+  (require 'init-lang-javascript)
 
-  (require 'init-misc-python)
-  (require 'init-misc-irony)
-  (require 'init-misc-lisp)
-  (require 'init-misc-org-mode)
+  (require 'init-lang-python)
+  (require 'init-lang-lisp)
+  (require 'init-org-mode)
+  (require 'init-lsp-mode)
   (require 'init-color-theme)
-  (require 'init-misc-realgud)
+  (require 'init-highlight-symbol)
   (el-get-bundle helm)
   (use-package helm
     :requires helm-config ; Not needed if you use package.el
@@ -59,8 +59,6 @@
 
   (el-get-bundle slim-mode)
   (use-package slim-mode)
-  (el-get-bundle highlight-symbol)
-  (use-package init-highlight-symbol)
   ;;;; ycmd completion
   ;;(el-get-bundle emacs-ycmd)
   ;;(use-package init-emacs-ycmd)

@@ -1,4 +1,4 @@
-;;; init-misc-javascript --- Summary
+;;; init-lang-javascript --- Summary
 ;;; Commentary:
 ;;; Code:
 (el-get-bundle skewer-mode)
@@ -10,5 +10,5 @@
    (css-mode-hook . skewer-css-mode)
    (html-mode-hook . skewer-html-mode)))
 (el-get-bundle rjsx-mode)
-(provide 'init-misc-javascript)
-;;; init-misc-javascript ends here
+(provide 'init-lang-javascript)
+;;; init-lang-javascript ends here

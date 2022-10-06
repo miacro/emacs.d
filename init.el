@@ -6,7 +6,7 @@
   "Add DIR to 'load-path' recursively."
   (add-to-list 'load-path dir)
   (dolist (file (directory-files-recursively dir ".*" t))
-    (when (file-directory-p file)
+    (when (and (file-directory-p file) (not (string-match-p "/deprecated" file)))
       (add-to-list 'load-path file))))
 
 (add-to-load-path-recursively

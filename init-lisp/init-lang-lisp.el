@@ -1,4 +1,4 @@
-;;; init-misc-lisp --- Summary
+;;; init-lang-lisp --- Summary
 ;;; Commentary:
 ;;; Code:
 (el-get-bundle slime)
@@ -15,5 +15,5 @@
   :config
   (slime-setup '(slime-company)))
 
-(provide 'init-misc-lisp)
-;;; init-misc-lisp ends here
+(provide 'init-lang-lisp)
+;;; init-lang-lisp ends here

@@ -1,4 +1,4 @@
-;;; init-misc-org-mode --- Summary
+;;; init-org-mode --- Summary
 ;;; Commentary:
 ;;; Code:
 (el-get-bundle org-mode)
@@ -53,5 +53,5 @@
   ;; (setq org-mind-map-engine "circo")  ; Circular Layout
   )
 
-(provide 'init-misc-org-mode)
-;;; init-misc-org-mode ends here
+(provide 'init-org-mode)
+;;; init-org-mode ends here
