@@ -27,7 +27,8 @@
   (el-get-bundle yasnippet)
   (use-package yasnippet
     :config
-    (yas-reload-all))
+    (yas-reload-all)
+    (add-hook 'prog-mode-hook #'yas-minor-mode))
 
   (el-get-bundle emacs-w3m)
   ;;(el-get-bundle ecb)
