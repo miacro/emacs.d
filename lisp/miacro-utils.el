@@ -39,5 +39,24 @@
       (setq output (shell-command-to-string install-bin))
       (message "%s\n" output))))
 
+(cl-defun miacro-eval-from-url (url &optional &key (last-exp-p t))
+  (if (executable-find "curl")
+      (let*
+          ((string (shell-command-to-string (format "curl -fsSL %s" url))))
+        (with-temp-buffer
+          (insert string)
+          (miacro-eval-current-buffer :last-exp-p last-exp-p)))
+    (with-current-buffer
+        (url-retrieve-synchronously url)
+      (miacro-eval-current-buffer :last-exp-p last-exp-p))))
+
+(cl-defun miacro-eval-current-buffer (&optional &key (last-exp-p t))
+  (if last-exp-p
+      (progn
+        (goto-char (point-max))
+        (eval-print-last-sexp))
+    (progn
+      (eval-buffer))))
+
 (provide 'miacro-utils)
 ;;; miacro-utils ends here
