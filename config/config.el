@@ -1,5 +1,5 @@
-;;(global-linum-mode t)
-(add-hook 'prog-mode-hook 'linum-mode)
+;;(global-display-line-numbers-mode 1)
+(add-hook 'prog-mode-hook #'display-line-numbers-mode)
 (setq inhibit-startup-buffer-menu t)
 ;;(setq inhibit-startup-screen nil)
 (tool-bar-mode 0)
